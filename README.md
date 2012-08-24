@@ -1,6 +1,6 @@
 nodejs-setup-script
 ===================
 
-Download, setup and configure nodejs automatically.
+Download, setup and configure nodejs automatically.<br>
 usage: sh node_setup.sh $NODE_VERSION
 e.g.:  sh node_setup.sh 0.8.2
