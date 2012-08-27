@@ -59,7 +59,7 @@ echo -n 'Checking node			: '
 node_exists=`which node`
 if [ -z $node_exists ]; then
 	echo 'add node to PATH...'
-	echo 'PATH=$PATH:/home/node/bin' >> /etc/profile
+	echo 'export PATH=$PATH:/home/node/bin' >> /etc/profile
 	source /etc/profile
 else
 	echo 'found'
@@ -68,7 +68,7 @@ fi
 echo -n 'Checking NODE_PATH			: '
 if [ -z $NODE_PATH ]; then
 	echo 'set NODE_PATH...'
-	echo 'NODE_PATH=/home/node/lib/node_modules' >> /etc/profile
+	echo 'export NODE_PATH=/home/node/lib/node_modules' >> /etc/profile
 	source /etc/profile
 else
 	echo 'found'
